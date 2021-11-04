@@ -1,0 +1,2 @@
+# DemoPlug
+Demo wordpress plugin
