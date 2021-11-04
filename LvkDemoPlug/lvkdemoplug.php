@@ -1,46 +1,46 @@
 <?php
 /**
  * @package Lvk Demo Plug
- * @version 1.0.0
+ * @version 1.1.0
  */
 /*
 Plugin Name: Lvk Demo Plug
 Plugin URI: https://github.com/LucVK/DemoPlug
 Description: This is my first plugin
 Author: Luc Van Keer
-Version: 1.0.0
+Version: 1.1.0
 Author URI: http://lvk.tt/
 */
 
 function hello_lvk_get_lyric() {
 	/** These are the lyrics to Hello Dolly */
-	$lyrics = "Hello, Dolly
-Well, hello, Dolly
-It's so nice to have you back where you belong
-You're lookin' swell, Dolly
-I can tell, Dolly
-You're still glowin', you're still crowin'
-You're still goin' strong
-I feel the room swayin'
-While the band's playin'
-One of our old favorite songs from way back when
-So, take her wrap, fellas
-Dolly, never go away again
-Hello, Dolly
-Well, hello, Dolly
-It's so nice to have you back where you belong
-You're lookin' swell, Dolly
-I can tell, Dolly
-You're still glowin', you're still crowin'
-You're still goin' strong
-I feel the room swayin'
-While the band's playin'
-One of our old favorite songs from way back when
-So, golly, gee, fellas
-Have a little faith in me, fellas
-Dolly, never go away
-Promise, you'll never go away
-Dolly'll never go away again";
+	$lyrics = "Hello, Dolly (nl)
+Well, hello, Dolly (nl)
+It's so nice to have you back where you belong (nl)
+You're lookin' swell, Dolly (nl)
+I can tell, Dolly (nl)
+You're still glowin', you're still crowin' (nl)
+You're still goin' strong (nl)
+I feel the room swayin' (nl)
+While the band's playin' (nl)
+One of our old favorite songs from way back when (nl)
+So, take her wrap, fellas (nl)
+Dolly, never go away again (nl)
+Hello, Dolly (nl)
+Well, hello, Dolly (nl)
+It's so nice to have you back where you belong (nl)
+You're lookin' swell, Dolly (nl)
+I can tell, Dolly (nl)
+You're still glowin', you're still crowin' (nl)
+You're still goin' strong (nl)
+I feel the room swayin' (nl)
+While the band's playin' (nl)
+One of our old favorite songs from way back when (nl)
+So, golly, gee, fellas (nl)
+Have a little faith in me, fellas (nl)
+Dolly, never go away (nl)
+Promise, you'll never go away (nl)
+Dolly'll never go away again" (nl);
 
 	// Here we split it into lines.
 	$lyrics = explode( "\n", $lyrics );
