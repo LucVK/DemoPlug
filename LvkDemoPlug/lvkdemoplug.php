@@ -1,18 +1,18 @@
 <?php
 /**
- * @package Hello_Dolly
- * @version 1.7.2
+ * @package Lvk Demo Plug
+ * @version 1.0.0
  */
 /*
-Plugin Name: Hello Dolly
-Plugin URI: http://wordpress.org/plugins/hello-dolly/
-Description: This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly</cite> in the upper right of your admin screen on every page.
-Author: Matt Mullenweg
-Version: 1.7.2
-Author URI: http://ma.tt/
+Plugin Name: Lvk Demo Plug
+Plugin URI: https://github.com/LucVK/DemoPlug
+Description: This is my first plugin
+Author: Luc Van Keer
+Version: 1.0.0
+Author URI: http://lvk.tt/
 */
 
-function hello_dolly_get_lyric() {
+function hello_lvk_get_lyric() {
 	/** These are the lyrics to Hello Dolly */
 	$lyrics = "Hello, Dolly
 Well, hello, Dolly
@@ -50,8 +50,8 @@ Dolly'll never go away again";
 }
 
 // This just echoes the chosen line, we'll position it later.
-function hello_dolly() {
-	$chosen = hello_dolly_get_lyric();
+function hello_lvk() {
+	$chosen = hello_lvk_get_lyric();
 	$lang   = '';
 	if ( 'en_' !== substr( get_user_locale(), 0, 3 ) ) {
 		$lang = ' lang="en"';
@@ -66,10 +66,10 @@ function hello_dolly() {
 }
 
 // Now we set that function up to execute when the admin_notices action is called.
-add_action( 'admin_notices', 'hello_dolly' );
+add_action( 'admin_notices', 'hello_lvk' );
 
 // We need some CSS to position the paragraph.
-function dolly_css() {
+function lvk_css() {
 	echo "
 	<style type='text/css'>
 	#dolly {
@@ -97,4 +97,4 @@ function dolly_css() {
 	";
 }
 
-add_action( 'admin_head', 'dolly_css' );
+add_action( 'admin_head', 'lvk_css' );
